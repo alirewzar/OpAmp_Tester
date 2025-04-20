@@ -1,0 +1,93 @@
+
+**** 01/15/25 14:47:43 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\opamp_tester-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\S.Rajabi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 0.01s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OPAMP_TESTER
+V_V1         15+ 0 15Vdc
+V_V2         15- 0 -15Vdc
+V_V4         V+ 0 -5
+V_V5         V- 0 25
+R_R18         N39072 N38768  99.9K TC=0,0 
+C_C7         N38442 V-  1u  TC=0,0 
+R_R12         0 N38668  100 TC=0,0 
+C_C10         N38758 N38768  5u  TC=0,0 
+C_C11         N39006 N38768  50pF  TC=0,0 
+R_R14         N38698 N38758  220K TC=0,0 
+C_C8         0 N38652  1n  TC=0,0 
+R_R13         N38668 N38668  1Meg TC=0,0 
+X_U7         0 N38758 15+ 15- N38768 N39006 AD797S/AD
+C_C12         N38442 V+  1u  TC=0,0 
+R_R15         0 N39072  100 TC=0,0 
+R_R17         N38698 N38758  220K TC=0,0 
+R_R11         N38668 V-  9.9K TC=0,0 
+C_C9         0 0  33n  TC=0,0 
+X_U6A         N39072 N38668 V+ V- N38698 LM324
+V_V6         N38442 0  
++SIN 0 2m 500 0 0 0
+R_R10         N38652 0  10k TC=0,0 
+R_R16         N39072 N39072  1Meg TC=0,0 
+R_R21         0 N41097  100 TC=0,0 
+R_R19         0 N40935  100 TC=0,0 
+C_C14         N41053 N40857  50pF  TC=0,0 
+X_U8A         N41097 N40935 15+ 15- N41025 LM324
+C_C13         N40841 N40857  100u  TC=0,0 
+R_R22         N41025 N40841  220k TC=0,0 
+X_U9         0 N40841 15+ 15- N40857 N41053 AD797S/AD
+R_R23         N41097 N40857  100K TC=0,0 
+R_R20         N41025 N40841  220K TC=0,0 
+R_R26         0 N43470  100 TC=0,0 
+R_R30         N43636 N43386  10K TC=0,0 
+X_U10A         N43636 N43470 V+ V- N43560 LM324
+C_C15         N43368 N56066  5u  TC=0,0 
+R_R28         0 N43636  100 TC=0,0 
+R_R27         N43560 N43368  100K TC=0,0 
+X_U10B         N43694 N43368 15+ 15- N43386 LM324
+X_U10C         0 N44502 15+ 15- N44508 LM324
+R_R31         N44502 N48521  10k TC=0,0 
+C_C16         N54886 N44508  100n  TC=0,0 
+R_R33         N54886 N44502  10K TC=0,0 
+V_V10         N48521 0 DC 0 AC 1
++PULSE 1 -1 0 1n 1n 5u 10u
+R_R34         N40841 N40857  110K TC=0,0 
+R_R35         N43368 N43386  100K TC=0,0 
+R_R36         N56066 N43386  0.001 TC=0,0 
+R_R37         N43694 V+  20k TC=0,0 
+R_R38         V- N43694  20k TC=0,0 
+V_V12         V- 0 15
+V_V11         V+ 0 -15
+V_V13         N57781 0  
++SIN 0 1m 10k 0 0 0
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V12. You may break the loop by adding a series resistance
+

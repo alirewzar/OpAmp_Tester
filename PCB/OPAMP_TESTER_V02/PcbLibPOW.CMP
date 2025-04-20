@@ -1,0 +1,15 @@
+Component   : POW
+PCB Library : PcbLibPOW.PcbLib
+Date        : 4/7/2025
+Time        : 12:56:43 PM
+
+
+
+Dimension : 47.828 x 30.048 mm
+
+ Layer(s)              Pads(s)  Tracks(s)  Fill(s)  Arc(s)  Text(s)
+--------------------------------------------------------------------
+ Multi Layer                 4          0        0       0        0
+ Top Overlay                 0          4        0       0        0
+--------------------------------------------------------------------
+ Total                       4          4        0       0        0

@@ -1,0 +1,234 @@
+
+**** 01/18/25 14:59:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-main"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\CMRR-PSpiceFiles\SCHEMATIC1\main.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "main.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\S.Rajabi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CMRR
+R_R33         0 N50237  100 TC=0,0 
+V_V10         V+ 0 25
+R_R38         N50077 N50085  100K TC=0,0 
+R_R40         N50419 V-  20K TC=0,0 
+R_R34         N50305 N50077  100K TC=0,0 
+C_C17         0 N50305  1u  TC=0,0 
+R_R37         N50361 N50085  10K TC=0,0 
+X_U11B         N50419 N50077 15+ 15- N50085 LM324
+R_R35         0 N50361  100 TC=0,0 
+C_C16         N50077 N50085  1u  TC=0,0 
+V_V11         V- 0 -5
+X_U10D         N50361 N50237 V- V+ N50305 LM324
+R_R39         V+ N50419  20K TC=0,0 
+V_V1         15+ 0 15Vdc
+V_V2         15- 0 -15Vdc
+
+**** RESUMING main.cir ****
+.END
+
+**** 01/18/25 14:59:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-main"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\CMRR-PSpiceFiles\SCHEMATIC1\main.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U11B.dx       X_U11B.dy       X_U10D.dx       X_U10D.dy       
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 01/18/25 14:59:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-main"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\CMRR-PSpiceFiles\SCHEMATIC1\main.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U11B.qx       X_U10D.qx       
+               PNP             PNP             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF  166.7           166.7          
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.2          
+           D     .52             .52         
+
+
+**** 01/18/25 14:59:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-main"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\CMRR-PSpiceFiles\SCHEMATIC1\main.sim ] 
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U11B.sw2      X_U11B.sw1      X_U11B.sw3      X_U11B.sw4      
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+               X_U10D.sw2      X_U10D.sw1      X_U10D.sw3      X_U10D.sw4      
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+**** 01/18/25 14:59:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-main"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\CMRR-PSpiceFiles\SCHEMATIC1\main.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   V+)   25.0000  (   V-)   -5.0000  (  15+)   15.0000  (  15-)  -15.0000      
+
+(N50077)    9.9968 (N50085)   10.3280 (N50237)     .4517 (N50305)    9.6610     
+
+(N50361)     .5429 (N50419)   10.0000 (X_U10D.6)    1.6605                      
+
+(X_U10D.7)    7.6303                  (X_U10D.8)    7.6303                      
+
+(X_U10D.9)    0.0000                  (X_U10D.a)     .0406                      
+
+(X_U10D.b)   25.0410                  (X_U11B.6)    -.0020                      
+
+(X_U11B.7)   10.3770                  (X_U11B.8)   10.3770                      
+
+(X_U11B.9)    0.0000                  (X_U11B.a)   14.9990                      
+
+(X_U11B.b)-983.3E-06                  (X_U10D.10)    1.2708                     
+
+(X_U10D.11)    1.2109                 (X_U10D.12)    1.3018                     
+
+(X_U10D.13)    1.2110                 (X_U10D.14)    1.3015                     
+
+(X_U10D.53)   -6.5000                 (X_U10D.54)   25.8220                     
+
+(X_U10D.90)  -40.6130                 (X_U10D.91)   40.0000                     
+
+(X_U10D.92)  -40.0000                 (X_U10D.99)   10.0000                     
+
+(X_U11B.10)   10.6040                 (X_U11B.11)  -14.9610                     
+
+(X_U11B.12)  -14.9640                 (X_U11B.13)   10.5900                     
+
+(X_U11B.14)   10.5920                 (X_U11B.53)   13.5000                     
+
+(X_U11B.54)  -14.1780                 (X_U11B.90)     .9818                     
+
+(X_U11B.91)   40.0000                 (X_U11B.92)  -40.0000                     
+
+(X_U11B.99)    0.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V10       -1.504E+04
+    V_V11        1.504E+04
+    V_V1        -4.302E-03
+    V_V2         3.319E-03
+    X_U11B.vb   -1.961E-08
+    X_U11B.vc    3.173E-12
+    X_U11B.ve    2.645E-11
+    X_U11B.vlim   9.818E-04
+    X_U11B.vlp  -3.902E-11
+    X_U11B.vln  -4.099E-11
+    X_U10D.vb    1.661E-05
+    X_U10D.vc   -1.501E+04
+    X_U10D.ve   -1.501E+04
+    X_U10D.vlim  -4.061E-02
+    X_U10D.vlp  -8.061E-11
+    X_U10D.vln   1.558E-05
+
+    TOTAL POWER DISSIPATION   4.86E+05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/18/25 14:59:41 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-main"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\CMRR-PSpiceFiles\SCHEMATIC1\main.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

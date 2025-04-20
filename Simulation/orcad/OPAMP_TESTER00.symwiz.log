@@ -1,0 +1,7 @@
+STATUS: PSpice Model Import Wizard for "Capture" (17.2.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: E:\PROJECT_RAJABI\TESTER\OPAMP_TESTER\ORCAD\OPAMP_TESTER00.olb
+   INFO: Symbol Name: AD797_0
+  ERROR: Symbol "AD797_0" not found in symbol library "E:\PROJECT_RAJABI\TESTER\OPAMP_TESTER\ORCAD\OPAMP_TESTER00.olb".
+STATUS: 1 Error messages, 0 Warning messages

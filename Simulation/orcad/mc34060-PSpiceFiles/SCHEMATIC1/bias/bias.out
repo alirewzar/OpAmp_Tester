@@ -1,0 +1,191 @@
+
+**** 10/24/24 11:37:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\ORCAD\mc34060-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\S.Rajabi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source MC34060
+X_U1         N14534 N14374 0 N14846 N14374 N14986 0 N14386 MC33063A PARAMS:
++  PERIOD=30u
+R_R1         N14386 N14374  200 TC=0,0 
+C_C1         0 N14534  1.1n  TC=0,0 
+R_R2         0 N14846  10k TC=0,0 
+R_R3         0 N14846  86k TC=0,0 
+R_R4         N14374 N14986  180 TC=0,0 
+V_V1         N14386 0 25Vdc
+** Floating/unmodeled pin fixups **
+R__UC0001   N14374  0   {1/GMIN}
+
+**** RESUMING bias.cir ****
+.END
+
+**** 10/24/24 11:37:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\ORCAD\mc34060-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_M1.MD    X_U1.X_M1.MD1   X_U1.X_M1.MD2   X_U1.X_M1.MD3   
+          IS  102.194000E-12    0             100.000000E-12  100.000000E-12 
+           N    1.21527        50                .4              .4          
+          BV  100                                                            
+         IBV  250.000000E-06                                                 
+          RS    9.680220E-03                    3.000000E-06                 
+          TT  100.000000E-09                                                 
+         CJO    1.818590E-09    2.496970E-09                                 
+          VJ    1.1279           .5                                          
+           M     .449161         .9                                          
+          FC                   10.000000E-09                                 
+          EG    1.2                                                          
+         XTI    3.03885                                                      
+
+
+**** 10/24/24 11:37:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\ORCAD\mc34060-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.X_M1.MM    
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    3.56362      
+          KP   25.0081       
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    2.910310E-03 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO   16.058400E-06 
+        CGDO  425.919000E-09 
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 10/24/24 11:37:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\ORCAD\mc34060-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N14374)   24.9990 (N14386)   25.0000 (N14534)    0.0000 (N14846)    0.0000     
+
+(N14986)   24.9980 (X_U1.X_M1.4)    0.0000               (X_U1.X_M1.5)   24.9980
+
+(X_U1.X_M1.6)   24.9980               (X_U1.X_M1.7) 2.858E-09                   
+
+(X_U1.X_M1.8) 792.6E-15               (X_U1.X_M1.9)   24.9980                   
+
+(X_U1.X_M1.10)   24.9980              (X_U1.X_M1.11)   24.9980                  
+
+(X_U1.N10555779)    0.0000            (X_U1.N10555785)    3.5000                
+
+(X_U1.N10555793)     .4000            (X_U1.N10555863)    0.0000                
+
+(X_U1.N10556003)    0.0000            (X_U1.N10556201)    0.0000                
+
+(X_U1.N10556207)    0.0000            (X_U1.N10556425)    0.0000                
+
+(X_U1.N10560837)    3.5000            (X_U1.N10564322)    1.2500                
+
+(X_U1.N10564390) 1250.0000            (X_U1.N10564430)     .9500                
+
+(X_U1.N10565737)    0.0000            (X_U1.N10567979) 2.475E-09            
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -6.250E-06
+    X_U1.V_V8    0.000E+00
+    X_U1.V_vramp   0.000E+00
+    X_U1.V_V1    0.000E+00
+    X_U1.X_M1.VFI2   2.500E-11
+    X_U1.X_M1.VFI1   0.000E+00
+
+    TOTAL POWER DISSIPATION   1.56E-04  WATTS
+
+
+          JOB ABORTED
+
+**** 10/24/24 11:37:42 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\ORCAD\mc34060-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =      138.84
+

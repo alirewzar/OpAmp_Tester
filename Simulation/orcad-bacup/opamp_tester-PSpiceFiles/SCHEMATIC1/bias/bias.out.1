@@ -1,0 +1,58 @@
+
+**** 01/08/25 11:28:30 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ E:\Project_Rajabi\TESTER\OPAMP_TESTER\orcad\opamp_tester-pspicefiles\schematic1\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\S.Rajabi\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 30s 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source OPAMP_TESTER
+V_V1         15+ 0 15Vdc
+V_V2         15- 0 -15Vdc
+V_V4         25- 0 -25Vdc
+V_V3         25+ 0 25Vdc
+C_C1         N19153 N19163  5u  TC=0,0 
+R_R2         0 N19429  100 TC=0,0 
+R_R1         0 N19786  100 TC=0,0 
+R_R3         N19429 N19163  99.9K TC=0,0 
+C_C4         N192110 N19163  50pF  TC=0,0 
+X_U4A         N19778 N20136 15+ 15- N19381 LM324
+X_U5         0 N19153 15+ 15- N19163 N192110 AD797S/AD
+R_R4         N19381 N19153  220K TC=0,0 
+R_R7         N19786 N20136  1Meg TC=0,0 
+R_R6         N19429 N19778  1Meg TC=0,0 
+R_R9         N26165 0  10k TC=0,0 
+C_C3         0 N26165  1n  TC=0,0 
+R_R8         N20136 15-  9.9K TC=0,0 
+C_C2         0 0  33n  TC=0,0 
+R_R5         N27040 N19153  220K TC=0,0 
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N27040.
+

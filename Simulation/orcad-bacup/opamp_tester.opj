@@ -1,0 +1,153 @@
+(ExpressProject "OPAMP_TESTER"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File "D:\ProgramFile\orcad\tools\capture\library\pspice\analog.olb"
+        (DisplayName
+           "D:\ProgramFile\orcad\tools\capture\library\pspice\analog.olb")
+        (Type "Schematic Library"))
+      (File "D:\ProgramFile\orcad\tools\capture\library\pspice\breakout.olb"
+        (DisplayName
+           "D:\ProgramFile\orcad\tools\capture\library\pspice\breakout.olb")
+        (Type "Schematic Library"))
+      (File "D:\ProgramFile\orcad\tools\capture\library\pspice\source.olb"
+        (DisplayName
+           "D:\ProgramFile\orcad\tools\capture\library\pspice\source.olb")
+        (Type "Schematic Library"))
+      (File "D:\ProgramFile\orcad\tools\capture\library\pspice\sourcstm.olb"
+        (DisplayName
+           "D:\ProgramFile\orcad\tools\capture\library\pspice\sourcstm.olb")
+        (Type "Schematic Library"))
+      (File "D:\ProgramFile\orcad\tools\capture\library\pspice\special.olb"
+        (DisplayName
+           "D:\ProgramFile\orcad\tools\capture\library\pspice\special.olb")
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "..\orcad-bacup\opamp_tester.dsn"
+      (Type "Schematic Design")
+      (DisplayName "..\orcad-bacup\opamp_tester.dsn"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "1")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "TRUE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
+  (Folder "Outputs"
+    (File ".\opamp_tester-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net"
+      (Type "Report")
+      (DisplayName ".\opamp_tester-PSpiceFiles\SCHEMATIC1\SCHEMATIC1.net")))
+  (Folder "PSpice Resources"
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\opamp_tester-pspicefiles\schematic1\bias.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\opamp_tester-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-bias")
+        (Type "PSpice Profile"))))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSIN
+      (FullPartName "VSIN.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Sbreak
+      (FullPartName "Sbreak.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (AD797S/AD
+      (FullPartName "AD797S/AD.Normal")
+      (LibraryName
+         "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\ANLG_DEV.OLB")
+      (DeviceIndex "0"))
+    (AD797/SO
+      (FullPartName "AD797/SO.Normal")
+      (LibraryName "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (VCC_BAR
+      (LibraryName "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (LM324
+      (FullPartName "LM324.Normal")
+      (LibraryName "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (AD797
+      (FullPartName "AD797.Normal")
+      (LibraryName "D:\PROGRAMFILE\ORCAD\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VSTIM
+      (FullPartName "VSTIM.Normal")
+      (LibraryName "..\..\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Users\S.Rajabi\Downloads")
+  (MPSSessionName "A.Rajabi")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "E:\project\TESTER\OPAMP_TESTER\orcad-bacup\opamp_tester.dsn")
+      (Path "Design Resources"
+         "E:\project\TESTER\OPAMP_TESTER\orcad-bacup\opamp_tester.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "E:\project\TESTER\OPAMP_TESTER\orcad-bacup\opamp_tester.dsn"
+         "SCHEMATIC1" "CMRR"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 535"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1639 52 636")
+        (Scroll "-216 0")
+        (Zoom "114")
+        (Occurrence "/"))
+      (Path "E:\PROJECT\TESTER\OPAMP_TESTER\ORCAD-BACUP\OPAMP_TESTER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "VOS"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 78 1665 78 662")
+        (Scroll "39 621")
+        (Zoom "228")
+        (Occurrence "/"))
+      (Path "E:\PROJECT\TESTER\OPAMP_TESTER\ORCAD-BACUP\OPAMP_TESTER.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "CMRR"))))
